@@ -1,0 +1,5 @@
+[env]
+LIBSQLITE3_FLAGS = "SQLITE_MAX_ATTACHED=125"
+
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
